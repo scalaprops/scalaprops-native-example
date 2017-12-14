@@ -1,6 +1,5 @@
 language: scala
 sudo: required
-dist: trusty
 before_install:
 - curl https://raw.githubusercontent.com/scala-native/scala-native/21539aa97947f7/bin/travis_setup.sh | bash -x
 - wget https://raw.githubusercontent.com/paulp/sbt-extras/3c8fcadc3376edfd8e4b08b35f174935bf97bbac/sbt && chmod +x ./sbt

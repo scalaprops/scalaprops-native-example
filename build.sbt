@@ -10,7 +10,7 @@ scalapropsCoreSettings
 
 scalapropsNativeSettings
 
-val v = "0.5.2"
+val v = "0.5.3"
 
 libraryDependencies ++= Seq(
   "com.github.scalaprops" %%% "scalaprops-gen" % v,

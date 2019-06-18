@@ -11,7 +11,7 @@ script:
 - ./target/scala-2.11/scalaprops-native-example-out
 - ./target/scala-2.11/scalaprops-native-example-test-out
 jdk:
-- oraclejdk8
+- openjdk8
 cache:
   directories:
   - $HOME/.ivy2/cache

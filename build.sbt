@@ -1,7 +1,5 @@
 scalaVersion := "2.11.12"
 
-resolvers += Opts.resolver.sonatypeReleases
-
 name := "scalaprops-native-example"
 
 enablePlugins(ScalaNativePlugin)

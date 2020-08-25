@@ -5,7 +5,7 @@ addons:
 sudo: required
 before_install:
 - curl https://raw.githubusercontent.com/scala-native/scala-native/master/scripts/travis_setup.sh | bash -x
-- wget https://raw.githubusercontent.com/paulp/sbt-extras/3c8fcadc3376edfd8e4b08b35f174935bf97bbac/sbt && chmod +x ./sbt
+- wget https://raw.githubusercontent.com/paulp/sbt-extras/4d558c88ae6ae240e7a5eedc0cf33cc9e7bd0e58/sbt && chmod +x ./sbt
 script:
 - ./sbt run test
 - ./target/scala-2.11/scalaprops-native-example-out

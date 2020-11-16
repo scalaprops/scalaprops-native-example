@@ -1,0 +1,21 @@
+name: CI
+on:
+  pull_request:
+  push:
+  schedule:
+  - cron: '0 4 * * 6'
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+    steps:
+    - uses: actions/checkout@v1
+    - uses: olafurpg/setup-scala@v10
+      with:
+        java-version: "adopt@1.8"
+    - uses: coursier/cache-action@v5
+    - run: ./.github/scala-native-setup.sh
+    - run: sbt -v run test
+    - run: ./target/scala-2.11/scalaprops-native-example-out
+    - run: ./target/scala-2.11/scalaprops-native-example-test-out

@@ -21,5 +21,4 @@ scalacOptions ++= Seq(
   "-language:existentials",
   "-language:higherKinds",
   "-language:implicitConversions",
-  "-Yno-adapted-args"
 )

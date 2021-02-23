@@ -1,4 +1,4 @@
-scalaVersion := "2.11.12"
+scalaVersion := "2.13.5"
 
 name := "scalaprops-native-example"
 
@@ -21,5 +21,4 @@ scalacOptions ++= Seq(
   "-language:existentials",
   "-language:higherKinds",
   "-language:implicitConversions",
-  "-Yno-adapted-args"
 )

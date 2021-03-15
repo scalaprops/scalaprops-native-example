@@ -15,6 +15,6 @@ jobs:
     - uses: olafurpg/setup-scala@v10
       with:
         java-version: "adopt@1.8"
-    - uses: coursier/cache-action@v5
+    - uses: coursier/cache-action@v6
     - run: sbt -v run test
     - run: ./target/scala-2.13/scalaprops-native-example-test-out

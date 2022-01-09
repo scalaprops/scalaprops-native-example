@@ -1,5 +1,7 @@
 scalaVersion := "2.13.7"
 
+crossScalaVersions += "3.1.0"
+
 name := "scalaprops-native-example"
 
 enablePlugins(ScalaNativePlugin)

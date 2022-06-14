@@ -17,4 +17,4 @@ jobs:
     - uses: coursier/cache-action@v6
     - run: sbt -v "+ run" "+ test"
     - run: ./target/scala-2.13/scalaprops-native-example-test-out
-    - run: ./target/scala-3.1.2/scalaprops-native-example-test-out
+    - run: ./target/scala-3.1.3/scalaprops-native-example-test-out

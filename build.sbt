@@ -1,6 +1,6 @@
 scalaVersion := "2.13.16"
 
-crossScalaVersions += "3.6.3"
+crossScalaVersions += "3.6.4"
 
 name := "scalaprops-native-example"
 

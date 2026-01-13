@@ -18,4 +18,4 @@ jobs:
     - uses: sbt/setup-sbt@v1
     - run: sbt -v "+ run" "+ test"
     - run: ./target/scala-2.13/scalaprops-native-example-test
-    - run: ./target/scala-3.7.4/scalaprops-native-example-test
+    - run: ./target/scala-3.8.0/scalaprops-native-example-test

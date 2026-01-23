@@ -20,6 +20,5 @@ scalacOptions ++= Seq(
   "-unchecked",
   "-Xlint",
   "-language:existentials",
-  "-language:higherKinds",
   "-language:implicitConversions",
 )

@@ -16,6 +16,7 @@ jobs:
         distribution: temurin
     - uses: coursier/cache-action@v8
     - uses: sbt/setup-sbt@v1
-    - run: sbt -v "+ run" "+ test"
-    - run: ./target/scala-2.13/scalaprops-native-example-test
-    - run: ./target/scala-3.8.3/scalaprops-native-example-test
+    - run: sbt -v --server "+ run" "+ test"
+    - run: find . -type f -name scalaprops-native-example-test
+    - run: ./target/out/native0.5/scala-2.13.18/scalaprops-native-example/scalaprops-native-example-test
+    - run: ./target/out/native0.5/scala-3.8.3/scalaprops-native-example/scalaprops-native-example-test

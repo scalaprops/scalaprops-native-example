@@ -27,10 +27,5 @@ object Main {
 
 object UInt {
   def unapply(s: String): Option[Int] =
-    try {
-      Some(s.toInt).filter(_ > 0)
-    } catch {
-      case _: NumberFormatException =>
-        None
-    }
+    s.toIntOption.filter(_ > 0)
 }

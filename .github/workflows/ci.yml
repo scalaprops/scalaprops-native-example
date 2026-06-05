@@ -21,4 +21,4 @@ jobs:
     - run: sbt -v --server "+ run" "+ test"
     - run: find . -type f -name scalaprops-native-example-test
     - run: ./target/out/native0.5/scala-2.13.18/scalaprops-native-example/scalaprops-native-example-test
-    - run: ./target/out/native0.5/scala-3.8.3/scalaprops-native-example/scalaprops-native-example-test
+    - run: ./target/out/native0.5/scala-3.8.4/scalaprops-native-example/scalaprops-native-example-test

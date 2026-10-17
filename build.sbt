@@ -1,4 +1,4 @@
-scalaVersion := "2.13.18"
+scalaVersion := "3.10.0"
 
 crossScalaVersions += "3.9.0"
 

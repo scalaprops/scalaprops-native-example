@@ -4,7 +4,7 @@ import scalaprops._
 
 object ListTest extends Scalaprops {
 
-  val reverseTest = Property.forAll { (xs: List[Int]) =>
+  property("reverse") = Property.forAll { (xs: List[Int]) =>
     xs.reverse.reverse == xs
   }
 

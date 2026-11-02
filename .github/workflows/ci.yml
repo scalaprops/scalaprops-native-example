@@ -16,7 +16,7 @@ jobs:
       with:
         java-version: 17
         distribution: temurin
-    - uses: coursier/cache-action@v8
+    - uses: coursier/cache-action@v9
     - uses: sbt/setup-sbt@v1
     - run: sbt -v --server "+ run" "+ test"
     - run: ./target/out/native0.5/scala-2.13.18/scalaprops-native-example/scalaprops-native-example
